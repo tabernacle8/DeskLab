@@ -2,7 +2,7 @@ public class solution {
     public static void main(String[] args) {
 
         //Runner code for testing
-        System.out.println(calculateDesks(100, 100));
+        System.out.println(calculateDesks(13, 13));
 
     }
 
@@ -22,7 +22,6 @@ public class solution {
             }
 
             savedLength = savedLength - 3 - 6;
-            System.out.println(savedLength + ":" + numberOfDesks);
 
 
         }
