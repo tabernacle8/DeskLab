@@ -6,7 +6,7 @@ public class deskLab {
        
     }
 
-    public static int calculateDesks(int width, int height){
+    public static int calculateDesks(int width, int length){
 
       //Write code here
 
