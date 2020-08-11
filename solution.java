@@ -1,28 +1,36 @@
 public class solution {
-    public static void main(String []args) {
+    public static void main(String[] args) {
 
-      //Runner code for testing
-      System.out.println(calculateDesks(500,500));
-       
+        //Runner code for testing
+        System.out.println(calculateDesks(100, 100));
+
     }
 
-    public static int calculateDesks(int width, int length){
+    public static int calculateDesks(int width, int length) {
 
         int numberOfDesks = 0;
 
-      for(int i =0;length>=20+6;i++){
+        for (int savedLength = length; savedLength >= 20;) {
 
-        for(int j =0;width>=20+6;j++){
-            numberOfDesks++;
-            width = width - 20 - 6;
+            for (int savedWidth = width; savedWidth >= 20;) {
+
+                System.out.println(savedWidth);
+                numberOfDesks++;
+                savedWidth = savedWidth - 20 - 6;
+
+                
+            }
+
+            savedLength = savedLength - 20 - 6;
+            System.out.println(savedLength + ":" + numberOfDesks);
 
 
         }
-        length = length-20 -6;
 
+        if (width == 20 && length == 20) {
+            return (1);
+        }
 
-      }
-
-      return(numberOfDesks);
+        return (numberOfDesks);
     }
- }
+}
