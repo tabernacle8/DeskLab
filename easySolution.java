@@ -3,7 +3,7 @@ public class easySolution {
     public static void main(String[] args) {
 
         //Runner code for testing
-        System.out.println(calculateDesks(100, 100));
+        System.out.println(calculateDesks(13, 13));
 
     }
 
@@ -11,7 +11,7 @@ public class easySolution {
 
         int numberOfDesks = 0;
 
-        for (int savedLength = length; savedLength >= 20; savedLength = savedLength - 26) {
+        for (int savedLength = length; savedLength >= 3; savedLength = savedLength - 9) {
             numberOfDesks++;
         }
 
