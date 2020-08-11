@@ -18,7 +18,7 @@ public class solution {
                 numberOfDesks++;
                 savedWidth = savedWidth - 20 - 6;
 
-                
+
             }
 
             savedLength = savedLength - 20 - 6;
